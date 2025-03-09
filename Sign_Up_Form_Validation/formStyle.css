@@ -18,6 +18,7 @@ body{
 }
 
 .form-container{
+    position: relative;
     background-color: rgba(34, 28, 29, 0.822);
     max-width: 40rem;
     text-align: center;
@@ -65,7 +66,12 @@ a{
     color: aliceblue;
     scale: 1.03;
 }
+.valid-display{
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
 
+}
 
 /* Its time to make responsive signUp page using media selector */
 @media screen and (min-width:1200px) {
