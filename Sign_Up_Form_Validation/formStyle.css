@@ -1,0 +1,10 @@
+body{
+    border: .1rem solid red;
+}
+.container{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
