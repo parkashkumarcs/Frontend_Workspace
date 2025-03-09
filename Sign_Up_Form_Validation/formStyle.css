@@ -1,8 +1,17 @@
-html{
-    /* border: .1rem solid red; */
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+    
 }
 .container{
-    margin-top: 5rem;
+    min-height: 100vh;
+    /* margin-top: 4rem; */
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4rem;
+    
 }
 
 .form-container{
@@ -15,8 +24,9 @@ html{
     box-shadow: 0 0 5px 5px black;
     /* border: .1rem solid green; */
 }
-.form-container h2{
-    color: rgb(3, 122, 122);
+.form-container h1{
+    color: rgb(8, 201, 201);
+    font-weight: bolder;
 }
 
 .input-style{
@@ -30,6 +40,10 @@ html{
     height: 1/5rem;
     border-radius: .5rem;
     padding: .5rem;
+    margin-bottom: 1.5rem;
+}
+.input-style input:hover{
+    scale: 1.01;
 }
 .btn-style{
     width: 10rem;
@@ -37,5 +51,10 @@ html{
     border-radius: .5rem;
 }
 a{
-    color: rgb(3, 122, 122);;
+    color: rgb(8, 201, 201);
+}
+.btn-style:hover{
+    background-color: rgb(8, 201, 201);
+    color: aliceblue;
+    scale: 1.03;
 }
