@@ -1,32 +1,36 @@
 body{
-    margin-top: 0px;
-    margin-left: 0px;
+    margin: 0;
     overflow: hidden;
     
 }
 .container{
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     /* margin-top: 4rem; */
     background-image: url('./bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     
 }
 
 .form-container{
-    background-color: rgb(34, 28, 29);
-    max-width: 30rem;
+    background-color: rgba(34, 28, 29, 0.822);
+    max-width: 40rem;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     border-radius: .5rem;
-    padding: 1.1rem;
+    padding: 1.5rem;
     box-shadow: 0 0 5px 5px black;
     /* border: .1rem solid green; */
 }
 .form-container h1{
     color: rgb(8, 201, 201);
     font-weight: bolder;
+    margin-bottom: 5rem;
 }
 
 .input-style{
@@ -36,8 +40,9 @@ body{
 }
 .input-style input{
     display: inline-block;
-    width: 28rem;
-    height: 1/5rem;
+    width: 36rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
     border-radius: .5rem;
     padding: .5rem;
     margin-bottom: 1.5rem;
@@ -49,6 +54,8 @@ body{
     width: 10rem;
     font-size: 1.5rem;
     border-radius: .5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 a{
     color: rgb(8, 201, 201);
@@ -57,4 +64,38 @@ a{
     background-color: rgb(8, 201, 201);
     color: aliceblue;
     scale: 1.03;
+}
+
+
+/* Its time to make responsive signUp page using media selector */
+@media screen and (min-width:1200px) {
+    .form-container{
+        width: 100vh;
+    }
+    .input-style input{
+        max-width: 50rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: auto;
+        padding: 1rem;
+    }
+    .form-container{
+        width: auto;
+    }
+    .input-style input{
+        max-width: 25rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .input-style input{
+        max-width: 20rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .input-style input{
+        max-width: 18rem;
+    }
 }
