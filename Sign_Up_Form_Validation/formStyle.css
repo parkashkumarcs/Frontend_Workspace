@@ -68,8 +68,11 @@ a{
 }
 .valid-display{
     position: absolute;
-    bottom: 2rem;
-    left: 3rem;
+    bottom: 1rem;
+    left: 1.5rem;
+    text-align: start;
+    color: rgb(206, 0, 0);
+    font-size: 1.1rem;
 
 }
 
