@@ -1,27 +1,41 @@
 html{
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
 }
 .container{
     margin-top: 5rem;
 }
 
 .form-container{
-    background-color: crimson;
+    background-color: rgb(34, 28, 29);
     max-width: 30rem;
     text-align: center;
     margin: auto;
     border-radius: .5rem;
     padding: 1.1rem;
     box-shadow: 0 0 5px 5px black;
-    border: .1rem solid green;
+    /* border: .1rem solid green; */
+}
+.form-container h2{
+    color: rgb(3, 122, 122);
 }
 
 .input-style{
     margin-bottom: 1rem;
+    
 
 }
 .input-style input{
     display: inline-block;
     width: 28rem;
-    height: 2rem;
+    height: 1/5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+.btn-style{
+    width: 10rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+a{
+    color: rgb(3, 122, 122);;
 }
