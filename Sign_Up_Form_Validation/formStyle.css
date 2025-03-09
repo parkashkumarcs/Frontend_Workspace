@@ -1,10 +1,27 @@
-body{
+html{
     border: .1rem solid red;
 }
 .container{
-    text-align: center;
+    margin-top: 5rem;
 }
-.d-flex{
-    display: flex;
-    flex-direction: row;
+
+.form-container{
+    background-color: crimson;
+    max-width: 30rem;
+    text-align: center;
+    margin: auto;
+    border-radius: .5rem;
+    padding: 1.1rem;
+    box-shadow: 0 0 5px 5px black;
+    border: .1rem solid green;
+}
+
+.input-style{
+    margin-bottom: 1rem;
+
+}
+.input-style input{
+    display: inline-block;
+    width: 28rem;
+    height: 2rem;
 }
