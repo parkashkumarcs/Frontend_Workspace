@@ -10,11 +10,27 @@
     <div class="container">
       <div class="form-container">
         <form>
-          <h1>Sign<span style="color: white;">Up</span></h1>
-          <div class="input-style"><input type="text" placeholder="Full name"/></div>
-          <div class="input-style"><input type="email" placeholder="Email"/></div>
-          <div class="input-style"><input type="password" placeholder="Password"/></div>
-          <div class="input-style"><input type="password" placeholder="Confirm password"/></div>
+          <h1>Sign<span style="color: white">Up</span></h1>
+          <div class="input-style">
+            <input type="text" placeholder="Full name" />
+          </div>
+          <div class="input-style">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-style">
+            <input
+              type="password"
+              placeholder="Password"
+              onkeyup="validPass1(this)"
+            />
+          </div>
+          <div class="input-style">
+            <input
+              type="password"
+              placeholder="Confirm password"
+              onkeyup="validPass2(this)"
+            />
+          </div>
           <div class="input-style">
             <button type="submit" class="btn-style">SignUp</button>
           </div>

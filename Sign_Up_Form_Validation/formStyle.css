@@ -97,14 +97,38 @@ a{
     .input-style input{
         max-width: 25rem;
     }
+    .valid-display{
+        font-size: 10px;
+        bottom: 5rem;
+        left: 1rem;
+    }
+    .btn-style{
+        width: fit-content;
+    }
 }
 @media screen and (max-width:500px) {
     .input-style input{
         max-width: 20rem;
     }
+    .valid-display{
+        font-size: 10px;
+        bottom: 5rem;
+        left: 1rem;
+    }
+    .btn-style{
+        width: fit-content;
+    }
 }
 @media screen and (max-width:400px) {
     .input-style input{
         max-width: 18rem;
+    }
+    .valid-display{
+        font-size: 10px;
+        bottom: 5rem;
+        left: 1rem;
+    }
+    .btn-style{
+        width: fit-content;
     }
 }
