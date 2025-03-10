@@ -1,7 +1,9 @@
 var pass1;
+var pass2;
 var upCase = document.getElementById('uppercase');
 var loCase = document.getElementById('lowercase');
 var specialCh = document.getElementById('special');
+var confirm = document.getElementById('confirm');
 var num = document.getElementById('numb');
 const case1 = /[A-Z]/;
 const case2 = /[a-z]/;
@@ -57,4 +59,17 @@ function validPass1(val1){
 }
 function validPass2(val2){
     // alert(val2.value); // this is also working properly
+    pass2 = val2.value;
+    
+    if(pass2 === pass1){
+        confirm.innerText = 'password matched!';
+        confirm.style.color = 'green';
+    }
+    else{
+        confirm.innerText = "password doen't matched!";
+        confirm.style.color = 'red';
+    }
+    if(pass2.length === 0){
+        confirm.innerText = "";
+    }
 }
