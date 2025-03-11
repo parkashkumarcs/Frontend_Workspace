@@ -68,7 +68,7 @@ a{
 }
 .valid-display{
     position: absolute;
-    bottom: 1rem;
+    bottom: 7rem;
     left: 1.5rem;
     text-align: start;
     color: rgb(206, 0, 0);
@@ -78,7 +78,7 @@ a{
 #confirm{
     color: red;
     position: absolute;
-    bottom: 9.5rem;
+    bottom: 15.5rem;
     right: 3.5rem;
 }
 #check{
@@ -107,6 +107,7 @@ a{
     }
     .form-container{
         width: auto;
+        height: auto;
     }
     .input-style input{
         max-width: 25rem;
@@ -118,6 +119,10 @@ a{
     }
     .btn-style{
         width: fit-content;
+    }
+    #confirm{
+        bottom: 10rem;
+        right: 2rem;
     }
 }
 @media screen and (max-width:500px) {
@@ -144,5 +149,23 @@ a{
     }
     .btn-style{
         width: fit-content;
+    }
+}
+@media screen and (min-width:800px){
+    .form-container{
+        width: auto;
+        height: auto;
+    }
+    .valid-display{
+        font-size: 10px;
+        bottom: 5rem;
+        left: 1rem;
+    }
+    .btn-style{
+        width: fit-content;
+    }
+    #confirm{
+        bottom: 10rem;
+        right: 2rem;
     }
 }
