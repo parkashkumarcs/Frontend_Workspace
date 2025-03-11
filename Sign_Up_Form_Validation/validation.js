@@ -1,10 +1,13 @@
 var pass1;
 var pass2;
+var togglePassword1 = document.getElementById('password1');
+var togglePassword2 = document.getElementById('password2');
 var upCase = document.getElementById('uppercase');
 var loCase = document.getElementById('lowercase');
 var specialCh = document.getElementById('special');
 var confirm = document.getElementById('confirm');
 var num = document.getElementById('numb');
+var message = document.getElementById('message');
 const case1 = /[A-Z]/;
 const case2 = /[a-z]/;
 const case3 = /[0-9]/;
@@ -66,10 +69,27 @@ function validPass2(val2){
         confirm.style.color = 'green';
     }
     else{
-        confirm.innerText = "password doen't matched!";
+        confirm.innerText = "password doesn't matched!";
         confirm.style.color = 'red';
     }
     if(pass2.length === 0){
         confirm.innerText = "";
+    }
+}
+
+function togglePass(val3){
+    let typ1 = togglePassword1.getAttribute('type');
+    let typ2 = togglePassword2.getAttribute('type');
+    if(typ1 === 'password'){
+        togglePassword1.setAttribute('type', 'text');
+        message.innerText = 'Hide password';
+    }else{
+        togglePassword1.setAttribute('type', 'password');
+        message.innerText = 'Show password';
+    }
+    if(typ2 === 'password'){
+        togglePassword2.setAttribute('type', 'text');
+    }else{
+        togglePassword2.setAttribute('type', 'password');
     }
 }

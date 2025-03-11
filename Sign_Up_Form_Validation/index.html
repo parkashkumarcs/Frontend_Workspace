@@ -22,6 +22,7 @@
               type="password"
               placeholder="Password"
               onkeyup="validPass1(this)"
+              id="password1"
             />
           </div>
           <div class="input-style">
@@ -29,8 +30,13 @@
               type="password"
               placeholder="Confirm password"
               onkeyup="validPass2(this)"
+              id="password2"
             />
           </div>
+          <span id="message">Show password</span
+          ><input type="checkbox" id="check" 
+            onclick="togglePass()"
+          />
           <div class="input-style">
             <button type="submit" class="btn-style">SignUp</button>
           </div>

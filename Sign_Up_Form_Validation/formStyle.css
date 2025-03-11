@@ -54,7 +54,7 @@ body{
     width: 10rem;
     font-size: 1.5rem;
     border-radius: .5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 a{
@@ -79,6 +79,14 @@ a{
     position: absolute;
     bottom: 9.5rem;
     right: 3.5rem;
+}
+#check{
+    scale: 1.5;
+    margin-left: 1rem;
+}
+#message{
+    font-size: 1.2rem;
+    color: aliceblue;
 }
 
 /* Its time to make responsive signUp page using media selector */
