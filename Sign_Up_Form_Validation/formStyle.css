@@ -21,6 +21,7 @@ body{
     position: relative;
     background-color: rgba(34, 28, 29, 0.822);
     max-width: 40rem;
+    height: 90vh;
     text-align: center;
     /* margin: auto; */
     border-radius: .5rem;
