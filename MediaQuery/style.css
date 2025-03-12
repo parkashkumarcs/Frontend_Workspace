@@ -1,4 +1,5 @@
 *{
+    background-color: aliceblue;
     /* border: .1rem solid black; */
 }
 .main-container{
@@ -9,23 +10,39 @@
 
 }
 .child-container {
-    width: 23%;
+    width: 22%;
     height: 150px;
     margin: 1%;
     float: left;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 .clear{
     clear: both;
 }
 .red{
-    background-color: red;
+    border-left: 5px solid red;
 }
 .blue{
-    background-color: blue;
+    border-left: 5px solid blue;
 }
 .green{
-    background-color: green;
+    border-left: 5px solid green;
 }
 .orange{
-    background-color: orange;
+    border-left: 5px solid orange;
+}
+
+/* Now its time use media query to make responsive */
+
+@media screen and (min-width:200px) and (max-width:600px) {
+    .main-container{
+        width: 100%;
+    }
+    .child-container{
+        width: 96%;
+    }
+}
+@media screen and (min-width: 601px) and (min-width: 601px){
+    
 }
