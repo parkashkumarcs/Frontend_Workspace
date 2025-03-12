@@ -1,10 +1,31 @@
 *{
-    border: .1rem solid black;
+    /* border: .1rem solid black; */
 }
 .main-container{
     width: 1100px;
-    height: 40px;
     margin: auto;
-    background-color: aqua;
+    background-color: rgb(41, 41, 41);
+    position: relative;
 
+}
+.child-container {
+    width: 23%;
+    height: 150px;
+    margin: 1%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
 }
