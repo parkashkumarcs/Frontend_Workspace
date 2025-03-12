@@ -1,0 +1,10 @@
+*{
+    border: .1rem solid black;
+}
+.main-container{
+    width: 1100px;
+    height: 40px;
+    margin: auto;
+    background-color: aqua;
+
+}
