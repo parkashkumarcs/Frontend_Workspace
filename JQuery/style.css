@@ -1,0 +1,49 @@
+:root {
+  --text-color: rgb(196, 50, 5);
+}
+body {
+  margin: 6rem;
+  margin-top: 0;
+  background-color: rgb(6, 4, 24);
+}
+.h1 {
+  height: 60vh;
+  color: var(--text-color);
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.navbar__links a {
+  /* margin-right: 2rem; */
+}
+.navbar__links h1 {
+  color: #f0f8ff;
+  padding: 1rem;
+}
+.button__container button {
+  margin: 2rem;
+  margin-right: 0px;
+  background-color: var(--text-color);
+  font-size: 1.5rem;
+  width: 8rem;
+  color: #f0f8ff;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.button__container button:hover {
+  background: transparent;
+  scale: 1.05;
+  border-left: 0.3rem solid white;
+  transition: 1s;
+}
